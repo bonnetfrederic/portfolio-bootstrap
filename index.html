@@ -15,26 +15,26 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-info shadow">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">CV</a>
+      <a class="navbar-brand ps-2" href="#CV"">CV</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse d-flex flex-row" id="navbarNavAltMarkup">
         <div class="navbar-nav w-100 d-flex justify-content-around">
-          <a class="nav-link mx-5" href="#">Skills</a>
-          <a class="nav-link mx-5" href="#">Portfolio</a>
-          <a class="nav-link mx-5">Contact</a>
+          <a class="nav-link mx-5" href="#skills">Skills</a>
+          <a class="nav-link mx-5" href="#portfolio">Portfolio</a>
+          <a class="nav-link mx-5" href="#contact">Contact</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <div class="container my-5">
+  <div class="container my-5 pt-5" id="CV">
     <div class="row justify-content-md-center">
-      <div class="col-md-6 d-flex justify-content-right">
+      <div class="col-9 col-sm-6 d-flex justify-content-right">
         <div class="w-100">
           <h1 class="d-flex flex-row-reverse">Who's this guy?</h1>
           <h2 class="d-flex flex-row-reverse">just a neewbie</h2>
@@ -43,15 +43,15 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 d-flex justify-content-left">
+      <div class="col-3 col-sm-6 d-flex justify-content-left">
         <div class="text-center">
-          <img src="./img/billGates.jpg" class="rounded-circle" alt="...">
+          <img src="./img/billGates.jpg" class="rounded-circle shadow img-thumbnail" alt="...">
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container my-5 bg-info">
+  <div class="container my-5 bg-info border rounded shadow" id="skills">
     <div class="row">
       <div class="col pb-5">
         <div>
@@ -97,7 +97,7 @@
     </div>
   </div>
 
-  <h3 class="text-center mb-4">Portfolio</h3>
+  <h3 class="text-center mb-4" id="portfolio">Portfolio</h3>
 
   <div class="container my-5">
     <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -150,7 +150,7 @@
 
   <h3 class="text-center mb-4">Contactez-moi</h3>
 
-  <div class="container mb-5 mx-auto">
+  <div class="container mb-5 mx-auto" id="contact">
     <form class="col-md-6 mx-auto align-self-center">
       <div class="mb-3">
         <label for="formName" class="form-label">Nom</label>
@@ -163,6 +163,9 @@
       <div class="mb-3">
         <label for="formMessage" class="form-label">Message</label>
         <textarea class="form-control" id="formMessage" rows="3"></textarea>
+      </div>
+      <div class="text-end">
+        <button type="submit" class="btn btn-info">Envoyer</button>
       </div>
     </form>
   </div>
